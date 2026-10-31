@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-doodle {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.font-sketch {
+  font-family: 'Rock Salt', cursive;
+}
+
+.font-sans-ui {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Custom rotate keyframe for worldwide badge */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+/* Floating animation for hero shoe */
+@keyframes float-hero {
+  0%, 100% {
+    transform: translateY(0px) rotate(-16deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-14deg);
+  }
+}
+
+.animate-float-hero {
+  animation: float-hero 5s ease-in-out infinite;
+}
